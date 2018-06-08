@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Josefin Sans', serif;
+    font-size: 1em;
+    background-color: #fff;
+    color: black;
+}
+
+/* --------------------------------------- */
+/* Header */
+/* --------------------------------------- */
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://firebasestorage.googleapis.com/v0/b/museum-outdoor.appspot.com/o/IMG_1978.JPG?alt=media&token=364c8259-2bc0-4796-a763-12472877408a);
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: auto; /*100% of the viewport */
+  background-attachment: fixed;
+}
+
+.row {
+  /* position: relative; */
+  background-color: transparent;
+  margin: auto;
+  display: flex;
+  width: 95%;
+  justify-content: center;
+
+  /* box-shadow: 0 2px 2px #efefef; */
+}
+
+.nav {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.headerLogo {
+  height: 120px;
+  width: 100px;
+}
+
+.headerLinks {
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.headerLinks li {
+  margin-top: 30px;
+  padding: 7px;
+}
+
+.headerLinks a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0.35rem .75rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  border-radius: 60px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #A6B1B0;
+  transition: background-color 500ms ease;
+}
+
+.headerLinks a:hover {
+  background-color: #37060D;
+}
+
+.topMessage {
+  color: #ffffff;
+  font-family: Bangers;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+  padding-left: 85px;
+  text-decoration: none;
+}
+
+.message {
+  text-align: center;
+  margin-top: 400px;
+}
+
+.message h1 {
+  font-size: 100px;
+  color: #fff;
+  font-weight: 300;
+  margin: 10px;
+}
+
+.message h4 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    -webkit-box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px #efefef; /* x-axis, y-axis, blur, color*/
+    /* z-index: 9999; /* establishes stacking of elements, now it is at the top of evertyhing*/
+/* }
+.sticky .headerLinks { margin-top: 18px; }
+.sticky .headerLinks li a:link,
+.sticky .headerLinks li a:visited {
+    color: #555;
+    padding: 17px 0;
+} */
+/* .sticky .logo { display: none;}
+.sticky .logo-black { display: block;} */
+
+/* --------------------------------------- */
+/*  About Us */
+/* --------------------------------------- */
+h3 {
+  margin: 0;
+}
+
+.aboutUs {
+  margin-top: 8px;
+}
+
+.aboutMO {
+  text-align: center;
+  padding: 5px;
+  width: 60%;
+  margin: auto;
+}
+
+.aboutUsOverallContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.aboutColumn {
+  margin: 10px;
+  border: 2px;
+  border-style: dashed;
+  width: 50%;
+}
+
+
+.aboutUsContainerOne, .aboutUsContainerTwo {
+  margin: auto;
+  width: inherit;
+  display: flex;
+  padding: 25px;
+  text-align: center;
+}
+
+
+/* --------------------------------------- */
+/*  SignIn and SignUp */
+/* --------------------------------------- */
+
+.signIn {
+  margin-bottom: 15px;
+}
+
+/* --------------------------------------- */
+/*  Murals */
+/* --------------------------------------- */
+
+.featuredMurals {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+
+.featuredMurals li {
+  width: 33.33%;
+}
+
+.featuredMural {
+  overflow: hidden;
+  margin: 0;
+}
+
+.featuredMural img {
+  width: 100%;
+  height: 415px;
+  transition: transform 0.5s;
+}
+
+.featuredMural img:hover {
+  transform: scale(1.07);
+}
+
+/* --------------------------------------- */
+/*  Street Art Map */
+/* --------------------------------------- */
+
+.streetArtMap {
+  margin: 20px auto;
+
+}
+
+
+.streetArtMap h2 {
+  text-align: center;
+  font-size: 48px;
+  margin: 15px auto;
+}
+
+#map{
+    height:575px;
+    width:100%;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

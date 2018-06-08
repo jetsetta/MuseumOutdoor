@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Profile</title>
+    <link href="css/profile_final.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="profileHeader">
+      <h1>NAVBAR</h1>
+      <button id="logOutBtn">Log Out</button>
+    </header>
+    <section id="profileInfo">
+
+    </section>
+    <hr>
+    <h2>Murals</h2>
+    <section id="murals">
+      <div id="muralDisplay">
+
+      </div>
+    </section>
+    <section>
+      <div class="indiMurals">
+        <label for="muralName">Name: </label>
+        <input name="muralName" id="muralName" type="text" placeholder="Name of painting...">
+
+        <label for="muralYear">Year: </label>
+        <input name="muralYear" id="muralYear" type="text" placeholder="Year of painting...">
+
+        <label for="muralLatitude">Latitude: </label>
+        <input name="muralLatitude" id="muralLatitude" type="text" placeholder="Location latitude...">
+
+        <label for="muralLongitude">Longitude: </label>
+        <input name="muralLongitude" id="muralLongitude" type="text" placeholder="Location longitude...">
+
+        <label for="muralPhoto">Wall image: </label>
+        <input name="muralPhoto" id="muralPhoto" type="text">
+
+        <button id="muralAdd">Add mural</button>
+      </div>
+      <div id="map">
+
+      </div>
+
+    </section>
+
+
+  </body>
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDsv6jpuaejiGCGWkO1JQL5TXDGkSzGgl0",
+      authDomain: "museum-outdoor.firebaseapp.com",
+      databaseURL: "https://museum-outdoor.firebaseio.com",
+      projectId: "museum-outdoor",
+      storageBucket: "museum-outdoor.appspot.com",
+      messagingSenderId: "96069444443"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="js/profile_final.js"></script>
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7i9KIABRS4kW_IUB44joE6hbjslmkvNc&callback=initMap">
+    </script>
+
+</html>

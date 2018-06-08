@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Profile</title>
+    <link href="css/profile.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="profileHeader">
+      <h1>NAVBAR</h1>
+      <button id="logOutBtn">Log Out</button>
+    </header>
+    <section class="profileInfo">
+      <div class="picture">
+        <label for="photo">Image location: </label>
+        <input name="photo" id="photo" type="text">
+      </div>
+      <div class="userDetail">
+        <div id="nameEmail">
+          <p>Name: </p>
+          <p>Email: </p>
+        </div>
+        <div id="info">
+        <label for="siteUrl">Portfolio URL: </label>
+        <input name="siteUrl" id="siteUrl" type="url" placeholder="e.g. http://yoururl.com">
+
+        <label for="about">About me: </label>
+        <textarea name="about" rows="8" cols="80" id="about" placeholder="Input text here:"></textarea>
+
+        <button id="detailBtn">Submit</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="mural">
+        <div class="muralPic">
+
+        </div>
+        <div class="muralInfo">
+
+        </div>
+      </div>
+    </section>
+
+
+
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDsv6jpuaejiGCGWkO1JQL5TXDGkSzGgl0",
+      authDomain: "museum-outdoor.firebaseapp.com",
+      databaseURL: "https://museum-outdoor.firebaseio.com",
+      projectId: "museum-outdoor",
+      storageBucket: "museum-outdoor.appspot.com",
+      messagingSenderId: "96069444443"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="js/profile.js"></script>
+</html>

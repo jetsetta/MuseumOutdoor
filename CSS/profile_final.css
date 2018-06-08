@@ -1,0 +1,44 @@
+#profileInfo {
+  display: flex;
+}
+
+.userDetail {
+  display: flex;
+  flex-direction: column;
+}
+
+.picture, .muralPic {
+  margin-right: 15px;
+  height:auto;
+  width: 300px;
+}
+
+.picture img {
+  width: 100%;
+  height: auto;
+}
+
+.indiMurals {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+}
+
+#muralAdd {
+  margin-top: 8px;
+  width: 100px;
+}
+
+#murals{
+  display: flex;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+/* .wallDetail {
+  display: flex;
+  flex-direction: column;
+} */

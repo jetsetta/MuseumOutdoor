@@ -1,0 +1,36 @@
+.userDetail {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileInfo {
+  display: flex;
+}
+
+/* picture section */
+.picture {
+  background-color: gray;
+  margin-right: 15px;
+  height: 200px;
+  width: 300px;
+}
+
+#about {
+  width: 300px;
+  height: 200px;
+  vertical-align: text-top;
+}
+
+#detailBtn {
+  margin-top: 15px;
+  width: 25%;
+}
+
+.profileHeader {
+  display: flex;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+}
