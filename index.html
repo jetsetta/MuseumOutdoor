@@ -4,6 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/queries.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
 
@@ -15,22 +17,32 @@
 
   <body>
     <header class="header">
-      <nav class="navbar">
-        <div class="row">
-          <img src="CSS/Pics/moLogoWhite.png" class="headerLogo"/>
+        <div class="Navbar">
+          <nav class="Navbar__Items">
+            <div class="Navbar__Link Navbar__Link-brand">
+              <img src="CSS/Pics/moLogoWhite.png" class="headerLogo"/>
+            </div>
+            <div class="Navbar__Link Navbar__Link-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+          </nav>
+          <nav class="Navbar_Items-right">
             <ul class="headerLinks">
-              <li><a href="#aboutUsLink">About Us</a></li>
-              <li><a href="#featuredArt">Featured Artworks</a></li>
-              <li><a href="#artMapLink">Explore Art Map</a></li>
-              <li><a href="#" class="modalBtnSignUp">Sign Up</a></li>
-              <li><a href="#" class="modalBtnSignIn">Sign In</a></li>
-              <li><a href="#contactUsLink">Contact Us</a></li>
+              <li><a class="Navbar__Link" href="profile_final.html">My Profile</a></li>
+              <li><a class="Navbar__Link" href="#aboutUsLink">About Us</a></li>
+              <li><a class="Navbar__Link" href="#featuredArt">Featured Artworks</a></li>
+              <li><a class="Navbar__Link" href="#artMapLink">Explore Art Map</a></li>
+              <li><a class="modalBtnSignUp Navbar__Link" href="#">Sign Up</a></li>
+              <li><a class="modalBtnSignIn Navbar__Link" href="#">Sign In</a></li>
+              <li><a class="Navbar__Link" href="#contactUsLink">Contact Us</a></li>
+            </ul>
+          </nav>
         </div>
         <div class="message">
             <h1>Explore your City</h1>
             <h4>Our exhibits are free</h4>
         </div>
-      </nav>
+
   </header>
 
   <section class="aboutUs" id="aboutUsLink">
@@ -74,16 +86,16 @@
           <img src="https://firebasestorage.googleapis.com/v0/b/museum-outdoor.appspot.com/o/IMG_2004.JPG?alt=media&token=2a4d8dde-e236-45d6-ac4e-82c9a4b97b73" alt="Butt-Squiat & Warholio Mural">
           <div class="textOverImage">
             <p class="text"><i>Butt-Squiat & Warholio Mural</i></p>
-            <p class="text">John Does</p>
+            <p class="text">Afro Samurai</p>
           </div>
         </figure>
       </li>
       <li>
         <figure class="featuredMural">
-          <img src="https://firebasestorage.googleapis.com/v0/b/museum-outdoor.appspot.com/o/IMG_4870.JPG?alt=media&token=f921546b-b0b2-4ade-9d2c-45e7e7e8bc04" alt="Paper Planes Mural">
+          <img src="https://firebasestorage.googleapis.com/v0/b/museum-outdoor.appspot.com/o/IMG_4870.JPG?alt=media&token=f921546b-b0b2-4ade-9d2c-45e7e7e8bc04" alt="Paper Planes">
           <div class="textOverImage">
             <p class="text"><i>Paper Planes</i></p>
-            <p class="text">John Does</p>
+            <p class="text">King Kai</p>
           </div>
         </figure>
       </li>
@@ -91,8 +103,8 @@
         <figure class="featuredMural">
           <img src="https://firebasestorage.googleapis.com/v0/b/museum-outdoor.appspot.com/o/IMG_5034.JPG?alt=media&token=eed5dc83-c995-402d-85d4-ecd0178bf204" alt="Colorful Grandma Mural">
           <div class="textOverImage">
-            <p class="text"><i>Colorful Grandma Mural</i></p>
-            <p class="text">John Does</p>
+            <p class="text"><i>Salute to Grandma</i></p>
+            <p class="text">Huey Freeman</p>
           </div>
         </figure>
       </li>
@@ -100,8 +112,8 @@
         <figure class="featuredMural">
           <img src="https://firebasestorage.googleapis.com/v0/b/museum-outdoor.appspot.com/o/IMG_4859.JPG?alt=media&token=f2dbcb3e-c774-4ca6-ab5e-17dcc993153b" alt="Cosmic Universe Mural">
           <div class="textOverImage">
-            <p class="text"><i>Cosmic Universe Mural</i></p>
-            <p class="text">John Does</p>
+            <p class="text"><i>Cosmic Trail</i></p>
+            <p class="text">Afro Samurai</p>
           </div>
         </figure>
       </li>
@@ -109,8 +121,8 @@
           <figure class="featuredMural">
             <img src="https://firebasestorage.googleapis.com/v0/b/museum-outdoor.appspot.com/o/IMG_4868.jpg?alt=media&token=66a98a51-c091-475e-82b3-dcb9983138a1" alt="Jaguar Spirit Mural">
             <div class="textOverImage">
-              <p class="text"><i>Jaguar Spirit Mural</i></p>
-              <p class="text">John Does</p>
+              <p class="text"><i>Jaguar Spirit</i></p>
+              <p class="text">Huey Freeman</p>
             </div>
           </figure>
       </li>
@@ -118,8 +130,8 @@
           <figure class="featuredMural">
           <img src="https://firebasestorage.googleapis.com/v0/b/museum-outdoor.appspot.com/o/CMYK19.jpg?alt=media&token=bcb254a6-6d10-4eb4-8a53-5ae94d88f403" alt="Condo Monsters Mural">
           <div class="textOverImage">
-            <p class="text"><i>Condo Monster Mural</i></p>
-            <p class="text">John Does</p>
+            <p class="text"><i>Angry Houses</i></p>
+            <p class="text">Huey Freeman</p>
           </div>
           </figure>
       </li>
@@ -151,7 +163,6 @@
           <select id="category">
             <option value="artist">Artist</option>
             <option value="photographer">Photographer</option>
-            <option value="enthusiast">Enthusiast</option>
           </select>
             <button type="submit" class="signupbtn">Sign Up</button>
 
@@ -260,6 +271,7 @@
     };
     firebase.initializeApp(config);
   </script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="JS/site.js"></script>
   <script src="JS/googleMaps.js"></script>

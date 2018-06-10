@@ -36,17 +36,18 @@ header {
 }
 
 .headerLogo {
-  height: 120px;
-  width: 100px;
+  height: 240px;
+  width: 200px;
 }
 
 .headerLinks {
   width: 100%;
-  margin: 0;
+  margin-right: 10px;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
+  padding-left: 0;
 }
 
 .headerLinks li {
@@ -54,7 +55,7 @@ header {
   padding: 7px;
 }
 
-.headerLinks a {
+.Navbar__Link {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
@@ -72,18 +73,6 @@ header {
 
 .headerLinks a:hover {
   background-color: #37060D;
-}
-
-.topMessage {
-  color: #ffffff;
-  font-family: Bangers;
-	font-size: 30px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 26.4px;
-  padding-left: 85px;
-  text-decoration: none;
 }
 
 .message {
@@ -136,6 +125,7 @@ h3 {
 
 .aboutUs {
   margin-top: 8px;
+
 }
 
 .aboutUs h2 {
@@ -145,6 +135,7 @@ h3 {
 
 .aboutUs p {
   line-height: 1.3em;
+  font-size: 1.3em;
 }
 
 .aboutMO {
@@ -182,9 +173,9 @@ h3 {
   text-align: center;
 }
 
-.icons {
+p.icons {
   margin: 0;
-  font-size: 200%;
+  font-size: 2.5em;
   text-align: center;
 }
 
@@ -279,7 +270,7 @@ h3 {
 }
 
 .text {
-  color: gray;
+  color: #2c3e50;
   font-size: 24px;
   padding: 16px 32px;
 }
@@ -297,11 +288,11 @@ h3 {
 .streetArtMap h2 {
   text-align: center;
   font-size: 48px;
-  margin: 15px auto;
+  margin: 65px auto;
 }
 
 #map{
-    height:575px;
+    height:675px;
     width:100%;
 }
 
@@ -357,6 +348,10 @@ hr {
   width: 250px;
 
 }
+
+/* --------------------------------------- */
+/*  SI and SU Modal */
+/* --------------------------------------- */
 
 /* Modal */
 
@@ -444,4 +439,31 @@ hr {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* --------------------------------------- */
+/*  Mobile Menu */
+/* --------------------------------------- */
+
+.Navbar {
+  display: flex;
+}
+
+
+.Navbar__Items {
+  display: flex;
+}
+
+.Navbar_Items-right {
+  margin-left: auto;
+}
+
+.Navbar__Link-toggle {
+  display: none;
+}
+
+.Navbar__Link-toggle i {
+    margin-top: 30px;
+    padding-top: 7px;
+    font-size: 50px;
 }

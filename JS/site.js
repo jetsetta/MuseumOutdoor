@@ -81,6 +81,7 @@ btnLogin.addEventListener('click',function(){
 })
 }
 
+
 // SignUp Modal //
 
 // When the user clicks the button, open the modal
@@ -114,3 +115,14 @@ window.onclick = function(event) {
     myModalSignIn.style.display = "none";
     }
 }
+
+
+// Mobile menu //
+
+function classToggle() {
+  const navs = document.querySelectorAll('.Navbar_Items-right')
+
+  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+}
+document.querySelector('.Navbar__Link-toggle')
+  .addEventListener('click', classToggle);

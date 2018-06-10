@@ -1,9 +1,9 @@
-let nameEmail = document.getElementById('nameEmail')
+let nameEmail = document.querySelector('.nameEmail')
 let logOutBtn = document.getElementById('logOutBtn')
-let siteUrl = document.getElementById('siteUrl')
-let about = document.getElementById('about')
+let siteUrl = document.querySelector('.siteUrl')
+let about = document.querySelector('.about')
 let detailBtn = document.getElementById('detailBtn')
-let photo = document.getElementById('photo')
+let photo = document.querySelector('.photo')
 
 let storage = firebase.storage()
 

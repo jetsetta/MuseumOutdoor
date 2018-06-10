@@ -6,7 +6,10 @@ let muralYear = document.getElementById('muralYear')
 let muralLatitude = document.getElementById('muralLatitude')
 let muralLongitude = document.getElementById('muralLongitude')
 let muralPhoto = document.getElementById('muralPhoto')
-let muralAdd = document.getElementById('muralAdd')
+
+let addingMural = document.getElementById('addingMural')
+let indiMural = document.getElementsByClassName('indiMurals')
+
 
 let usersRef = firebase.database().ref("users")
 
@@ -45,12 +48,8 @@ function setupUserObservers() {
 // Google Maps //
 function initMap(latitude, longitude, name) {
 
-  console.log(latitude)
-  console.log(longitude)
-
-
        var options = {
-           zoom:10,
+           zoom:14,
            center:{lat:29.7604,lng:-95.3698}
        }
    /* new map */
@@ -96,8 +95,68 @@ for(var i = 0; i < markers.length; i++){
    }
 }
 
+// populate page with information from Firebase //
+function populatePage(uid) {
+  let userProfile = `<div class='picture'>
+                      <img class='profilePic' src="${uid.imageURL}" alt="${uid.name}">
+                      </div>
+                      <div class="userDetail">
+                        <div class="nameEmail">
+                          <h2>${uid.name}</h2>
+                        </div>
+                        <div class="info">
+                        <p>Email: <a href="mailto:${uid.email}">${uid.email}</a></p>
+                          <p class="siteUrl">Website: <a href="${uid.url}">${uid.name}</a></p>
+                          <p class="about">About Me: ${uid.about}</p>
+                        </div>
+                      </div>`
+
+  profileInfo.innerHTML = userProfile
+      }
+
+function populateMural(indMural) {
+  muralDisplay.innerHTML = ''
+  indMural.forEach(function(indiMural) {
+  let muralDetail = `
+                    <div class='wallDetail'>
+                    <p class="muralName"><b>${indiMural.name}</b> </p>
+                    <p>${indiMural.year}</p>
+                    <p>Latitude: ${indiMural.latitude}</p>
+                    <p>Longitude: ${indiMural.longitude}</p>
+                    <button class="deletMuralBtn" onclick="deleteMural('${indiMural.id}')">Delete Mural</button>
+                    </div>
+                    <div class='wallPicture'>
+                    <img class='muralPic' src='${indiMural.photo}'>
+                    </div>
+                    `
+
+  muralDisplay.innerHTML += muralDetail
+
+  let latitude = Number(indiMural.latitude)
+  let longitude = Number(indiMural.longitude)
+  let name = indiMural.name
+
+  initMap(latitude, longitude, name)
+
+})
+
+ }
+
+
+
+// Log out button //
+logOutBtn.addEventListener('click',function(){
+  firebase.auth().signOut().then(function() {
+  console.log('Signed Out');
+  window.location = "index.html"
+}), function(error) {
+  console.error('Sign Out Error', error);
+}
+})
 
 // Add murals //
+
+let muralAdd = document.getElementById('muralAdd')
 
 firebase.auth().onAuthStateChanged(function(user) {
     if(user){
@@ -134,60 +193,3 @@ function deleteMural(muralId) {
   usersRef.child(uid).child("murals").child(muralId).remove()
   // console.log(muralId)
 }
-
-// populate page with information from Firebase //
-function populatePage(uid) {
-  let userProfile = `<div class='picture'>
-                      <img class='profilePic' src="${uid.imageURL}" alt="${uid.name}">
-                      </div>
-                      <div class="userDetail">
-                        <div class="nameEmail">
-                          <h2>Name: ${uid.name}</h2>
-                          <p>Email: <a href="mailto:${uid.email}">${uid.email}</a></p>
-                        </div>
-                        <div class="info">
-                          <p class="siteUrl">Website: <a href="${uid.url}">${uid.url}</a></p>
-                          <p class="about">About Me: ${uid.about}</p>
-                        </div>
-                        </div>`
-
-  profileInfo.innerHTML = userProfile
-      }
-
-function populateMural(indMural) {
-  muralDisplay.innerHTML = ''
-  indMural.forEach(function(indiMural) {
-  let muralDetail = `
-                    <div class='wallPicture'>
-                    <img class='muralPic' src='${indiMural.photo}'>
-                    </div>
-                    <div class='wallDetail'>
-                    <p class="muralName"><b>${indiMural.name}</b> </p>
-                    <p>${indiMural.year}</p>
-                    <p>Longitude: ${indiMural.longitude}</p>
-                    <p>Latitude: ${indiMural.latitude}</p>
-                    <button class="deletMuralBtn" onclick="deleteMural('${indiMural.id}')">Delete Mural</button>
-                    </div>
-                    `
-
-  muralDisplay.innerHTML += muralDetail
-
-  let latitude = Number(indiMural.latitude)
-  let longitude = Number(indiMural.longitude)
-  let name = indiMural.name
-
-  initMap(latitude, longitude, name)
-
-})
-
- }
-
-// Log out button //
-logOutBtn.addEventListener('click',function(){
-  firebase.auth().signOut().then(function() {
-  console.log('Signed Out');
-  window.location = "index.html"
-}), function(error) {
-  console.error('Sign Out Error', error);
-}
-})

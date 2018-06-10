@@ -40,7 +40,7 @@ header {
   width: 100px;
 }
 
-.headerLinks {
+.headerLinksPF {
   width: 100%;
   margin: 0;
   list-style: none;
@@ -49,12 +49,12 @@ header {
   cursor: pointer;
 }
 
-.headerLinks li {
+.headerLinksPF li {
   margin: auto 15px;
   padding: 7px;
 }
 
-.headerLinks a {
+.headerLinksPF a {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
@@ -70,7 +70,7 @@ header {
 
 
 
-.headerLinks a:hover {
+.headerLinksPF a:hover {
   background-color: #37060D;
 }
 
@@ -124,7 +124,7 @@ header {
 }
 
 .about {
-  width: 300px;
+  width: 400px;
   height: 200px;
   vertical-align: text-top;
 }
@@ -147,6 +147,14 @@ header {
   margin-bottom: 15px;
 }
 
+.nameEmail a {
+  color: black;
+}
+
+.info a {
+  color: black;
+}
+
 .siteUrl {
   width: 250px;
   margin-bottom: 10px;
@@ -159,6 +167,7 @@ header {
 .muralDisplay {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
 
 }
@@ -178,9 +187,13 @@ header {
   /* flex-direction: column; */
   text-align: center;
   align-items: center;
-  width: 50%;
+  width: 80%;
   margin: 15px auto;
-  justify-content:space-between;
+  justify-content: center;
+}
+
+.wallDetail p, .wallDetail img {
+    margin-right: 25px;
 }
 
 
@@ -223,6 +236,6 @@ header {
 }
 
 #map{
-    height:575px;
+    height:675px;
     width:100%;
 }
