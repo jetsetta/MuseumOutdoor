@@ -5,14 +5,23 @@ let passwordTextBox = document.getElementById('passwordTextBox')
 let categoryOption = document.getElementById('category')
 let loginID = document.getElementById('loginID')
 
-let loginbtn = document.getElementById('btnLogin')
+let myModalSignIn = document.querySelector('.myModalSignIn')
+let modalBtnSignIn = document.querySelector('.modalBtnSignIn')
+var spanSignIn = document.getElementsByClassName('closeSignIn')[0];
+
+let myModalSignUp = document.querySelector('.myModalSignUp')
+let modalBtnSignUp = document.querySelector('.modalBtnSignUp')
+var spanSignUp = document.getElementsByClassName('closeSignUp')[0];
+
+let btnLogin = document.getElementById('btnLogin')
 let loginPass = document.getElementById('loginPass')
 
 
 
-let usersRef = firebase.database().ref("users")
+var usersRef = firebase.database().ref("users")
 
 // Sign Up //
+if(signupbtn) {
 signupbtn.addEventListener('click',function(){
 
   let name = nameTextBox.value
@@ -47,10 +56,11 @@ firebase.auth().onAuthStateChanged(function(user) {
 })
 
 })
-
+}
 
 
 // Sign In //
+if(btnLogin) {
 btnLogin.addEventListener('click',function(){
 
   let email = loginID.value
@@ -69,3 +79,38 @@ btnLogin.addEventListener('click',function(){
     alert("Your email/password combination does not match.")
   })
 })
+}
+
+// SignUp Modal //
+
+// When the user clicks the button, open the modal
+modalBtnSignUp.onclick = function() {
+    myModalSignUp.style.display = "flex";
+}
+
+spanSignUp.onclick = function() {
+    myModalSignUp.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == myModalSignUp) {
+        myModalSignUp.style.display = "none";
+    }
+}
+
+// SignIn Modal //
+
+// When the user clicks the button, open the modal
+modalBtnSignIn.onclick = function() {
+    myModalSignIn.style.display = "flex";
+}
+
+spanSignIn.onclick = function() {
+    myModalSignIn.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == myModalSignIn) {
+    myModalSignIn.style.display = "none";
+    }
+}

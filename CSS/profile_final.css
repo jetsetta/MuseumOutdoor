@@ -1,44 +1,228 @@
-#profileInfo {
-  display: flex;
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Josefin Sans', serif;
+    font-size: 1em;
+    background-color: #fff;
+    color: black;
 }
+
+/* --------------------------------------- */
+/* Header */
+/* --------------------------------------- */
+
+
+
+header {
+  width: 100%;
+  height: auto; /*100% of the viewport */
+  margin-bottom: 15px;
+}
+
+.row {
+  /* position: relative; */
+  background-color: gray;
+  margin: auto;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  /* box-shadow: 0 2px 2px #efefef; */
+}
+
+.nav {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.homeLogo {
+  height: 120px;
+  width: 100px;
+}
+
+.headerLinks {
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.headerLinks li {
+  margin: auto 15px;
+  padding: 7px;
+}
+
+.headerLinks a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0.35rem .75rem;
+  /* border: 1px #ccc solid; */
+  display: inline-block;
+  border-radius: 60px;
+  text-decoration: none;
+  text-align: center;
+  /* background-color: #A6B1B0; */
+  transition: background-color 500ms ease;
+}
+
+
+
+.headerLinks a:hover {
+  background-color: #37060D;
+}
+
+.topMessage {
+  color: #ffffff;
+  font-family: Bangers;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+  padding-left: 85px;
+  text-decoration: none;
+}
+
+.profileInfo {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4em;
+  width: 90%;
+  margin: auto;
+}
+
+/* picture section */
+.picture {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-right: 15px;
+  height: auto;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePic {
+  object-fit: contain;
+  width: 100%;
+}
+
+.photo {
+  width: 250px;
+}
+
+/* User Info */
 
 .userDetail {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
-.picture, .muralPic {
-  margin-right: 15px;
-  height:auto;
+.about {
   width: 300px;
+  height: 200px;
+  vertical-align: text-top;
 }
 
-.picture img {
+#detailBtn {
+  margin-top: 15px;
+  width: 25%;
+}
+
+.profileHeader {
+  display: flex;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.nameEmail p {
+  margin-bottom: 15px;
+}
+
+.siteUrl {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+/* --------------------------------------- */
+/* Murals */
+/* --------------------------------------- */
+
+.muralDisplay {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#muralTitle {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 15px;
+}
+.murals {
+  display: flex;
   width: 100%;
-  height: auto;
+}
+
+.wallDetail {
+  display: flex;
+  /* flex-direction: column; */
+  text-align: center;
+  align-items: center;
+  width: 50%;
+  margin: 15px auto;
+  justify-content:space-between;
+}
+
+
+
+.muralPic {
+  height:auto;
+  width: 100%;
+}
+
+.wallPicture {
+  width: 100%;
 }
 
 .indiMurals {
   display: flex;
   flex-direction: column;
-  width: 15%;
+  margin: 15px 10px;
 }
 
-#muralAdd {
-  margin-top: 8px;
+.indiMurals input {
+  width: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.indiMurals button {
+  margin-top: 15px;
   width: 100px;
 }
 
-#murals{
-  display: flex;
+.muralName {
+  font-size: 1.6em;
 }
 
-#map {
-  height: 400px;
-  width: 100%;
+.deletMuralBtn {
+  width: 100px;
+  text-align:center;
+
+
 }
 
-/* .wallDetail {
-  display: flex;
-  flex-direction: column;
-} */
+#map{
+    height:575px;
+    width:100%;
+}

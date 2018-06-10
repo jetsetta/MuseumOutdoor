@@ -1,6 +1,6 @@
 let logOutBtn = document.getElementById('logOutBtn')
-let profileInfo = document.getElementById('profileInfo')
-let muralDisplay = document.getElementById('muralDisplay')
+let profileInfo = document.querySelector('.profileInfo')
+let muralDisplay = document.querySelector('.muralDisplay')
 let muralName = document.getElementById('muralName')
 let muralYear = document.getElementById('muralYear')
 let muralLatitude = document.getElementById('muralLatitude')
@@ -138,16 +138,16 @@ function deleteMural(muralId) {
 // populate page with information from Firebase //
 function populatePage(uid) {
   let userProfile = `<div class='picture'>
-                      <img src="${uid.imageURL}" alt="${uid.name}">
+                      <img class='profilePic' src="${uid.imageURL}" alt="${uid.name}">
                       </div>
                       <div class="userDetail">
-                        <div id="nameEmail">
-                          <p>Name: ${uid.name}</p>
+                        <div class="nameEmail">
+                          <h2>Name: ${uid.name}</h2>
                           <p>Email: <a href="mailto:${uid.email}">${uid.email}</a></p>
                         </div>
-                        <div id="info">
-                          <p>Website: <a href="${uid.url}">${uid.url}</a></p>
-                          <p>About Me: ${uid.about}</p>
+                        <div class="info">
+                          <p class="siteUrl">Website: <a href="${uid.url}">${uid.url}</a></p>
+                          <p class="about">About Me: ${uid.about}</p>
                         </div>
                         </div>`
 
@@ -157,18 +157,18 @@ function populatePage(uid) {
 function populateMural(indMural) {
   muralDisplay.innerHTML = ''
   indMural.forEach(function(indiMural) {
-  let muralDetail = `<div class='wallPicture'>
+  let muralDetail = `
+                    <div class='wallPicture'>
                     <img class='muralPic' src='${indiMural.photo}'>
                     </div>
                     <div class='wallDetail'>
-                    <p>Name: <b>${indiMural.name}</b> </p>
-                    <p>Year: ${indiMural.year}</p>
+                    <p class="muralName"><b>${indiMural.name}</b> </p>
+                    <p>${indiMural.year}</p>
                     <p>Longitude: ${indiMural.longitude}</p>
                     <p>Latitude: ${indiMural.latitude}</p>
-                    <button onclick="deleteMural('${indiMural.id}')">Delete Mural</button>
+                    <button class="deletMuralBtn" onclick="deleteMural('${indiMural.id}')">Delete Mural</button>
                     </div>
-
-                    <hr>`
+                    `
 
   muralDisplay.innerHTML += muralDetail
 

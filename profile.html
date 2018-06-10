@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/profile.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
   </head>
   <body>
-    <header class="profileHeader">
-      <h1>NAVBAR</h1>
-      <button id="logOutBtn">Log Out</button>
+    <header class="header">
+      <nav class="navbar">
+        <div class="row">
+          <a href="index.html"><img  class="homeLogo" src="CSS/Pics/moLogoWhite.png"></a>
+            <ul class="headerLinks">
+              <li><a href="#" id="logOutBtn">Log Out</a></li>
+        </div>
+      </nav>
     </header>
     <section class="profileInfo">
       <div class="picture">
+        <ion-icon name="person" class="photoPlaceholder"></ion-icon>
         <label for="photo">Image location: </label>
-        <input name="photo" id="photo" type="text">
+        <input name="photo" class="photo" type="text">
       </div>
       <div class="userDetail">
-        <div id="nameEmail">
-          <p>Name: </p>
+        <div class="nameEmail">
+          <h2>Name: </h2>
           <p>Email: </p>
         </div>
-        <div id="info">
+        <div class="info">
         <label for="siteUrl">Portfolio URL: </label>
-        <input name="siteUrl" id="siteUrl" type="url" placeholder="e.g. http://yoururl.com">
+        <input name="siteUrl" class="siteUrl" type="url" placeholder="e.g. http://yoururl.com">
 
         <label for="about">About me: </label>
-        <textarea name="about" rows="8" cols="80" id="about" placeholder="Input text here:"></textarea>
+        <textarea name="about" rows="8" cols="80" class="about" placeholder="Input text here:"></textarea>
 
         <button id="detailBtn">Submit</button>
         </div>

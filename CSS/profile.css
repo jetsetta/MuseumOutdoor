@@ -1,21 +1,129 @@
-.userDetail {
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Josefin Sans', serif;
+    font-size: 1em;
+    background-color: #fff;
+    color: black;
+}
+
+/* --------------------------------------- */
+/* Header */
+/* --------------------------------------- */
+
+
+
+header {
+  width: 100%;
+  height: auto; /*100% of the viewport */
+  margin-bottom: 15px;
+}
+
+.row {
+  /* position: relative; */
+  background-color: gray;
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+
+  /* box-shadow: 0 2px 2px #efefef; */
+}
+
+.nav {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.homeLogo {
+  height: 120px;
+  width: 100px;
+}
+
+.headerLinks {
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.headerLinks li {
+  margin: auto 15px;
+  padding: 7px;
+}
+
+.headerLinks a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0.35rem .75rem;
+  /* border: 1px #ccc solid; */
+  display: inline-block;
+  border-radius: 60px;
+  text-decoration: none;
+  text-align: center;
+  /* background-color: #A6B1B0; */
+  transition: background-color 500ms ease;
+}
+
+
+
+.headerLinks a:hover {
+  background-color: #37060D;
+}
+
+.topMessage {
+  color: #ffffff;
+  font-family: Bangers;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+  padding-left: 85px;
+  text-decoration: none;
 }
 
 .profileInfo {
   display: flex;
+  font-size: 1.4em;
+  width: 90%;
+  margin: auto;
+
 }
 
 /* picture section */
 .picture {
+  display: flex;
+  flex-direction: column;
   background-color: gray;
   margin-right: 15px;
-  height: 200px;
-  width: 300px;
+  height: auto;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
 }
 
-#about {
+.photoPlaceholder {
+  font-size: 160px  ;
+  color: blue;
+}
+
+.photo {
+  width: 250px;
+}
+
+/* User Info */
+
+.userDetail {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.about {
   width: 300px;
   height: 200px;
   vertical-align: text-top;
@@ -30,7 +138,16 @@
   display: flex;
 }
 
-#info {
+.info {
   display: flex;
   flex-direction: column;
+}
+
+.nameEmail p {
+  margin-bottom: 15px;
+}
+
+.siteUrl {
+  width: 250px;
+  margin-bottom: 10px;
 }

@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/profile_final.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
   </head>
   <body>
-    <header class="profileHeader">
-      <h1>NAVBAR</h1>
-      <button id="logOutBtn">Log Out</button>
+    <header class="header">
+      <nav class="navbar">
+        <div class="row">
+          <a href="index.html"><img  class="homeLogo" src="CSS/Pics/moLogoWhite.png"></a>
+            <ul class="headerLinks">
+              <li><a href="#" id="logOutBtn">Log Out</a></li>
+        </div>
+      </nav>
     </header>
-    <section id="profileInfo">
+    <section class="profileInfo">
 
     </section>
     <hr>
-    <h2>Murals</h2>
-    <section id="murals">
-      <div id="muralDisplay">
+    <h2 id="muralTitle">Murals</h2>
+    <section class="murals">
+      <div class="muralDisplay">
 
       </div>
     </section>
     <section>
+      <hr>
       <div class="indiMurals">
+        <h3>Add additional murals</h3>
         <label for="muralName">Name: </label>
         <input name="muralName" id="muralName" type="text" placeholder="Name of painting...">
 
