@@ -12,9 +12,9 @@ body {
 /* --------------------------------------- */
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../CSS/Pics/IMG_1978.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://firebasestorage.googleapis.com/v0/b/museum-outdoor.appspot.com/o/IMG_1978.JPG?alt=media&token=364c8259-2bc0-4796-a763-12472877408a');
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   width: 100%;
   height: auto; /*100% of the viewport */
   background-attachment: fixed;

@@ -51,6 +51,11 @@
     width: 50%;
   }
 
+  .featuredMural img {
+    height: 320px;
+  }
+
+
   .wallDetail {
     display: flex;
     text-align: center;
@@ -71,6 +76,11 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+  header {
+    background-size: inherit;
+
+  }
 
   .headerLinksPF {
     width: 50%;
@@ -98,6 +108,11 @@
 .featuredMurals li {
   width: 100%;
 }
+
+.featuredMural img {
+  height: 380px;
+}
+
 
 /* PROFILE FINAL */
 
@@ -160,11 +175,21 @@
 
   .wallDetail {
     flex-direction: column;
+
   }
 
-.contactArea label {
-  font-size: 1.3em;
+  .contactArea label {
+    font-size: 1.3em;
 }
 
+  .headerLogo {
+    height: 160px;
+    width: 120px;
+  }
+
+
+}
+
+@media only screen and (max-width: 320px) {
 
 }
