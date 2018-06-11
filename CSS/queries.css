@@ -1,6 +1,11 @@
 @media only screen and (max-width: 1067px) {
   /*Navbar*/
 
+  header {
+    background-size: cover;
+
+  }
+
   .Navbar__Items,
   .Navbar {
     flex-direction: column;
