@@ -12,7 +12,7 @@ body {
 /* --------------------------------------- */
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../css/pics/IMG_1978.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../CSS/Pics/IMG_1978.jpg');
   background-size: cover;
   background-position: bottom;
   width: 100%;
