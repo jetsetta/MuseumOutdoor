@@ -90,7 +90,7 @@ Here are various features that we will work on our second iteration:
 #### _**Sign Up Modal**_
 ![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.24.17%20PM.png?raw=true)
 
-#### _**Complete Profile**_
+#### _**Profile Setup**_
 
 ![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.24.45%20PM.png?raw=true)
 
