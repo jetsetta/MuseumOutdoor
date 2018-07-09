@@ -31,7 +31,15 @@ function populatePage(uid) {
                       <p>Email: ${uid.email}</p>`
   nameEmail.innerHTML = userNameEmail
       }
+// Upload photo //
 
+// var fileButton = document.getElementById("fileButton");
+//               fileButton.addEventListener('change', function(e){
+//                   var file = e.target.files[0];
+//                   var storageRef = firebase.storage().ref(file.name);
+//                   storageRef.put(file);
+//               });
+//
 // Add URL and About Me //
 
 firebase.auth().onAuthStateChanged(function(user) {
