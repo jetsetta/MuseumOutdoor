@@ -40,13 +40,14 @@ We wanted to show a map of Houston and pinpoint specific locations for each mura
 
 Our first iteration included:
 
-  * Landing page explaining the goals and features of the app
-  * Featured art
-  * Map with location of all saved art
-  * Ability to create new users
-  * Save user data
-  * Sign In to user profiles
+  * Landing page explaining the goals and features of the app.
+  * Featured art.
+  * Map with location of all saved art.
+  * Ability to create new users.
+  * Ability to save user data.
+  * Sign In to user profiles.
   * Profiles that include profile picture, contact information, art location and maps.
+  * Ability to add and remove murals.
   
 ## Our Stretch Goals
 
@@ -58,14 +59,17 @@ Here are various features that we will work on our second iteration:
   
 ## Authors
 
-[Gabriel Frontera](https://github.com/Unclechamps)
-[Sean Johnson-Sippial](https://github.com/jetsetta)
-[Conor Bellchambers](https://github.com/Conorrific)
+   [Gabriel Frontera](https://github.com/Unclechamps)
+   
+   [Sean Johnson-Sippial](https://github.com/jetsetta) 
+   
+   [Conor Bellchambers](https://github.com/Conorrific)  
 
 ## Github Link
 
 [Museum Outdoor Github](https://github.com/Unclechamps/MuseumOutdoorFinal)
 
 ## Screenshots
+
 
 
