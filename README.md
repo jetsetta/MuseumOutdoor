@@ -1,6 +1,7 @@
 # Museum Outdoor
 
 ## Live Demo
+[GitHub Pages](https://pages.github.com/)
 (http://museum-outdoor.surge.sh/ "Museum Outdoor")
 
 ## Contents
