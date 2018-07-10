@@ -4,6 +4,7 @@
 [Museum Outdoor](http://museum-outdoor.surge.sh/)
 
 ## Contents
+  * Screenshots
   * What It Is
   * What We Used
   * Challenges and Solutions
@@ -11,7 +12,36 @@
   * Our Stretch Goals
   * Authors
   * Github Link
-  * Screenshots
+
+## Screenshots
+
+#### _**Landing Page**_
+
+![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.22.30%20PM.png?raw=true)
+
+#### _**About Us Section**_
+
+![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.23.22%20PM.png?raw=true)
+
+#### _**Featured Artworks**_
+
+![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.23.46%20PM.png?raw=true)
+
+#### _**Google Map**_
+
+![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.24.01%20PM.png?raw=true)
+
+#### _**Sign Up Modal**_
+![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.24.17%20PM.png?raw=true)
+
+#### _**Profile Setup**_
+
+![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.24.45%20PM.png?raw=true)
+
+#### _**Profile Page**_
+![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.25.12%20PM.png?raw=true)
+![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.25.28%20PM.png?raw=true)
+![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.25.45%20PM.png?raw=true)
 
 ## What Is It
 Museum Outdoor (MO) is a proof-of-concept social project in which street art enthusiasts or even casual admirers can find local street art and engage with the artists responsible for it. We created MO as a platform of expression driven by a communal ideal to challenge modern art and share these free masterpieces. We wanted to give the people behind the murals that decorate our great city of Houston a platform to be recognized, connected to fans and, possibly, be a marketplace for future work.
@@ -69,32 +99,4 @@ Here are various features that we will work on our second iteration:
 
 [Museum Outdoor Github](https://github.com/Unclechamps/MuseumOutdoorFinal)
 
-## Screenshots
 
-#### _**Landing Page**_
-
-![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.22.30%20PM.png?raw=true)
-
-#### _**About Us Section**_
-
-![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.23.22%20PM.png?raw=true)
-
-#### _**Featured Artworks**_
-
-![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.23.46%20PM.png?raw=true)
-
-#### _**Google Map**_
-
-![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.24.01%20PM.png?raw=true)
-
-#### _**Sign Up Modal**_
-![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.24.17%20PM.png?raw=true)
-
-#### _**Profile Setup**_
-
-![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.24.45%20PM.png?raw=true)
-
-#### _**Profile Page**_
-![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.25.12%20PM.png?raw=true)
-![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.25.28%20PM.png?raw=true)
-![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.25.45%20PM.png?raw=true)
