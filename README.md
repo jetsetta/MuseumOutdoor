@@ -69,14 +69,14 @@ We wanted to show a map of Houston and pinpoint specific locations for each mura
 
 Our first iteration included:
 
-  * Landing page explaining the goals and features of the app.
-  * Featured art.
-  * Map with location of all saved art.
-  * Ability to create new users.
-  * Ability to save user data.
-  * Sign In to user profiles.
-  * Profiles that include profile picture, contact information, art location and maps.
-  * Ability to add and remove murals.
+  * Landing page explaining the goals and features of the app
+  * Featured art
+  * Map with location of all saved art
+  * Ability to create new users
+  * Ability to save user data
+  * Sign In to user profiles
+  * Profiles that include profile picture, contact information, art location and maps
+  * Ability to add and remove murals
   
 ## Our Stretch Goals
 
