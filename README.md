@@ -2,7 +2,7 @@
 
 ## [Website](http://museum-outdoor.surge.sh/)
 
-## [Demo](https://youtu.be/7MV-wgJPMCw)
+## [Demo Video](https://youtu.be/7MV-wgJPMCw)
 
 ## Contents
   * Screenshots
