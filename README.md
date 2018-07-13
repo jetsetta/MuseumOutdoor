@@ -63,7 +63,7 @@ In order to have our platform work as intended, we needed somewhere to store the
 
 Challenge #2 - Google Maps integration
 
-We wanted to show a map of Houston and pinpoint specific locations for each mural featured in the website. The challenge was not so much related to embedding Google Maps into our code, but feeding Google Maps with specific data created by users. We found a way to feed Google Maps with directions using latitude and longitude on both the main page and each individual user by running a loop that captures the longitude and latitude values of each painting. As a further improvement, we habe considered using specific addresses (i.e. 1401 McKinney) to populate the map as opposed to latitude and longitude.
+We wanted to show a map of Houston and pinpoint specific locations for each mural featured in the website. The challenge was not so much related to embedding Google Maps into our code, but feeding Google Maps with specific data created by users. We found a way to feed Google Maps with directions using latitude and longitude on both the main page and each individual user by running a loop that captures the longitude and latitude values of each painting. As a further improvement, we have considered using specific addresses (i.e. 1401 McKinney) to populate the map as opposed to latitude and longitude.
 
 ## Minimum Viable Product (MVP)
 
@@ -80,7 +80,7 @@ Our first iteration included:
   
 ## Our Stretch Goals
 
-Various features for the second iteration:
+Various features for our second iteration:
 
   * Ability to upload pictures directly to profile (currently using image URL)
   * Password encryption using bcrypt
