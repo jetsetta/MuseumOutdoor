@@ -29,8 +29,8 @@ function setupMapObservers() {
 function initMap(latitude, longitude, name, wallURL) {
 
        var options = {
-           zoom:12,
-           center:{lat:29.7604,lng:-95.3698}
+           zoom:13.5,
+           center:{lat:29.752024,lng:-95.3698}
        }
    /* new map */
  if(map == undefined) {
