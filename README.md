@@ -43,7 +43,7 @@
 ![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.25.28%20PM.png?raw=true)
 ![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.25.45%20PM.png?raw=true)
 
-## What Is It
+## What It Is
 Museum Outdoor (MO) is a proof-of-concept social project in which street art enthusiasts or even casual admirers can find local street art and engage with the artists responsible for it. We created MO as a platform of expression driven by a communal ideal to challenge modern art and share these free masterpieces. We wanted to give the people behind the murals that decorate our great city of Houston a platform to be recognized, connected to fans and, possibly, be a marketplace for future work.
 
 ## What We Used
@@ -63,24 +63,24 @@ In order to have our platform work as intended, we needed somewhere to store the
 
 Challenge #2 - Google Maps integration
 
-We wanted to show a map of Houston and pinpoint specific locations for each mural featured in the website. The challenge was not so much related to embedding Google Maps into our code, but feeding Google Maps with specific data created by users. We found a way to feed Google Maps with directions using latitude and longitude on both the main page and each individual user by running a loop that captures the longitude and latitude values of each painting. As a further improvement, we habe considered using specific addresses (i.e. 1401 McKinney) to populate the map as opposed to latitude and longitude.
+We wanted to show a map of Houston and pinpoint specific locations for each mural featured in the website. The challenge was not so much related to embedding Google Maps into our code, but feeding Google Maps with specific data created by users. We found a way to feed Google Maps with directions using latitude and longitude on both the main page and each individual user by running a loop that captures the longitude and latitude values of each painting. As a further improvement, we have considered using specific addresses (i.e. 1401 McKinney) to populate the map as opposed to latitude and longitude.
 
 ## Minimum Viable Product (MVP)
 
 Our first iteration included:
 
-  * Landing page explaining the goals and features of the app.
-  * Featured art.
-  * Map with location of all saved art.
-  * Ability to create new users.
-  * Ability to save user data.
-  * Sign In to user profiles.
-  * Profiles that include profile picture, contact information, art location and maps.
-  * Ability to add and remove murals.
+  * Landing page explaining the goals and features of the app
+  * Featured art
+  * Map with location of all saved art
+  * Ability to create new users
+  * Ability to save user data
+  * Sign In to user profiles
+  * Profiles that include profile picture, contact information, art location and maps
+  * Ability to add and remove murals
   
 ## Our Stretch Goals
 
-Here are various features that we will work on our second iteration:
+Various features for our second iteration:
 
   * Ability to upload pictures directly to profile (currently using image URL)
   * Password encryption using bcrypt
