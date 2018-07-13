@@ -1,7 +1,8 @@
 # Museum Outdoor
 
-## Live Demo
-[Museum Outdoor](http://museum-outdoor.surge.sh/)
+## [Website](http://museum-outdoor.surge.sh/)
+
+## [Demo Video](https://youtu.be/7MV-wgJPMCw)
 
 ## Contents
   * Screenshots
