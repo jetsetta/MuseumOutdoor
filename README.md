@@ -1,10 +1,8 @@
 # Museum Outdoor
 
-## Website
-[Museum Outdoor](http://museum-outdoor.surge.sh/)
+## Website(http://museum-outdoor.surge.sh/)
 
-## Demo
-[Museum Outdoor Video](https://youtu.be/7MV-wgJPMCw)
+## Demo(https://youtu.be/7MV-wgJPMCw)
 
 ## Contents
   * Screenshots
