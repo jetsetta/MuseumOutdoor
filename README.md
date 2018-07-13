@@ -43,7 +43,7 @@
 ![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.25.28%20PM.png?raw=true)
 ![alt text](https://github.com/Unclechamps/MuseumOutdoorFinal/blob/master/css/pics/Screenshots/Screen%20Shot%202018-07-09%20at%2012.25.45%20PM.png?raw=true)
 
-## What Is It
+## What It Is
 Museum Outdoor (MO) is a proof-of-concept social project in which street art enthusiasts or even casual admirers can find local street art and engage with the artists responsible for it. We created MO as a platform of expression driven by a communal ideal to challenge modern art and share these free masterpieces. We wanted to give the people behind the murals that decorate our great city of Houston a platform to be recognized, connected to fans and, possibly, be a marketplace for future work.
 
 ## What We Used
