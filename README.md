@@ -80,7 +80,7 @@ Our first iteration included:
   
 ## Our Stretch Goals
 
-Here are various features that we will work on our second iteration:
+Various features for the second iteration:
 
   * Ability to upload pictures directly to profile (currently using image URL)
   * Password encryption using bcrypt
